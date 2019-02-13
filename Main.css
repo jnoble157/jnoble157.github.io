@@ -79,12 +79,15 @@ html, body {
   position: fixed !important;
   top: 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  /* box-shadow: 0 4px 5px -2px rgba(0,0,0,0.22), 0 2px 1px -1px rgba(0,0,0,0.05); */
+  box-shadow: 0 4px 5px -2px rgba(0,0,0,0.22), 0 2px 1px -1px rgba(0,0,0,0.05);
   background-color: #fff;
   line-height: 30px;
 }
 .sticky .brand {
   line-height: 60px;
+}
+.sticky .brand a{
+  color: #000;
 }
 .sticky ul li a {
   color: #6E7982;
@@ -94,7 +97,7 @@ html, body {
 }
 
 .pattern-overlay {
-  background: rgba(0, 0, 0, 0.3) url("http://codemydesign.ru/CMDSpace/image/css/images/overlay.png") repeat;
+  /* background: rgba(0, 0, 0, 0.3) url("http://codemydesign.ru/CMDSpace/image/css/images/overlay.png") repeat; */
   height: 100%;
   left: 0;
   position: fixed;
@@ -251,4 +254,33 @@ html, body {
   #nav .open.sticky {
     height: auto;
   }
+}
+.masthead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.masthead h1 {
+    color: #F9F1F1;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 108px;
+    margin-bottom: 0px;
+}
+.masthead p {
+    color: #F9F1F1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0px;
+}
+.about {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
 }
