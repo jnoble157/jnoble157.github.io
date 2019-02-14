@@ -288,5 +288,18 @@ html, body {
   color: #fff;
   text-align: center;
   font-family: 'Noto Serif SC', serif;
-
+}
+.img-header {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    float: right;
+}
+.img {
+    width: 14vw;
+    height: 14vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
 }
