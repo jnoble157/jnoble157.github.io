@@ -275,12 +275,12 @@ html, body {
     margin-top: 0px;
 }
 .about {
-  position: relative;
+  position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: #000;
 }
