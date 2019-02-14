@@ -289,17 +289,26 @@ html, body {
   text-align: center;
   font-family: 'Noto Serif SC', serif;
 }
+.about p {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
 .img-header {
     position: relative;
     margin: auto;
     width: 50%;
-    float: right;
+    float: center;
 }
 .img {
-    width: 14vw;
-    height: 14vw;
+    width: 20vw;
+    height: 20vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
+    background: black;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;;
 }
