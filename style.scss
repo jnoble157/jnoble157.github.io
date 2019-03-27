@@ -1,24 +1,30 @@
-html, body {
+html,
+body {
   height: 100%;
+  position: relative;
   min-height: 100%;
   margin: 0;
   padding: 0;
+  background-color: black;
 }
-
-.section {
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
+section {
   height: 100%;
-  width: 100%;
+  font-family: 'Vollkorn', serif;
+}
+h1 {
+  margin: 0;
+  padding: 10px;
+}
+footer {
+  color: white;
+  float: right;
 }
 
+/* Navigation Bar */
 .nav {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   z-index: 100;
   position: absolute;
@@ -42,7 +48,7 @@ html, body {
   display: inline-block;
   float: left;
   font-size: 20px;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   -webkit-transition-property: background-color, box-shadow, line-height, height;
   transition-property: background-color, box-shadow, line-height, height;
   -webkit-transition-timing-function: cubic-bezier(0.78, 0.13, 0.15, 0.86);
@@ -52,7 +58,7 @@ html, body {
   /* padding-right: 60px; */
 }
 .nav .brand a {
-  color: #F9F1F1;
+  color: #f9f1f1;
   text-decoration: none;
 }
 .nav ul {
@@ -79,21 +85,22 @@ html, body {
   position: fixed !important;
   top: 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 5px -2px rgba(0,0,0,0.22), 0 2px 1px -1px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.22),
+    0 2px 1px -1px rgba(0, 0, 0, 0.05);
   background-color: #fff;
   line-height: 30px;
 }
 .sticky .brand {
   line-height: 60px;
 }
-.sticky .brand a{
+.sticky .brand a {
   color: #000;
 }
 .sticky ul li a {
-  color: #6E7982;
+  color: #6e7982;
 }
 .sticky ul li:hover a {
-  color: #E33B00;
+  color: #e33b00;
 }
 
 .pattern-overlay {
@@ -109,16 +116,16 @@ html, body {
 .menu {
   display: none;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .sticky .menu {
     top: 0;
   }
   .sticky .menu .hamburger {
-    background: #6E7982;
+    background: #6e7982;
   }
-  .sticky .menu .hamburger::before, .sticky .menu .hamburger::after {
-    background: #6E7982;
+  .sticky .menu .hamburger::before,
+  .sticky .menu .hamburger::after {
+    background: #6e7982;
   }
 
   .open.sticky .hamburger {
@@ -162,7 +169,9 @@ html, body {
     opacity: 1;
   }
 
-  .hamburger, .hamburger::after, .hamburger::before {
+  .hamburger,
+  .hamburger::after,
+  .hamburger::before {
     margin: 0 auto;
     display: block;
     width: 24px;
@@ -173,7 +182,7 @@ html, body {
   }
 
   .hamburger::before {
-    content: '';
+    content: "";
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -181,7 +190,7 @@ html, body {
   }
 
   .hamburger::after {
-    content: '';
+    content: "";
     -webkit-transform: rotate(-45deg) translate(2px, -2px);
     -ms-transform: rotate(-45deg) translate(2px, -2px);
     transform: rotate(-45deg) translate(2px, -2px);
@@ -256,11 +265,13 @@ html, body {
   }
 }
 .masthead {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
+
+/* Text overlay on banner
 .masthead h1 {
     color: #F9F1F1;
     font-family: 'Work Sans', sans-serif;
@@ -276,51 +287,150 @@ html, body {
     margin-top: 0px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.about {
-  position: absolute;
+*/
+/* Banner Section */
+#banner {
+  background: url(https://raw.githubusercontent.com/jnoble157/jnoble157.github.io/master/Images/image1.jpg);
+  filter: grayscale(100%);
   background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+/* About Me Section */
+#welcome-section {
+  position: relative;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: auto;
   width: 100%;
-  background-color: #fff;
   color: #fff;
   text-align: center;
-  font-family: 'Noto Serif SC', serif;
 }
-.about p {
-    margin-right: 25%;
-    margin-left: 25%;
-    text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
+#welcome-section p {
+  margin-right: 25%;
+  margin-left: 25%;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
 }
 .img-header {
-    position: relative;
-    margin: auto;
-    width: 100%;
-    float: center;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  float: center;
 }
 .img {
-    width: 20vw;
-    height: 20vw;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-    box-shadow: inset 20px 20px 20px #000;
+  width: 20vw;
+  height: 20vw;
+  min-height: 150px;
+  min-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.shadow {
-    position: absolute;
+
+/* Resume Section */
+#resume {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  color: #000;
+}
+.container {
+  padding: 0 20px 10px 20px;
+  background-color: black;
+  color: white;
+}
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#box {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  width: 450px;
+  text-wrap: wrap;
+  h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+  p {
     display: block;
-    width: 20vw;
-    height: 20vw;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: inset 3px 3px 20px 20px #000000;
-    border-radius: 20px;
-    top: 0;
-    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .icon {
+    display: block;
+    float: right;
+    width: auto;
+    height: 20px;
+  }
+  .box-header {
+    float: left;
+  }
+  .contents {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+/* Contact Me Section */
+#contact {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  margin: 0;
+  margin-bottom: 150px;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  h2 {
+    display: inline;
+    padding-right: 20px;
+  }
+  .labels{
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab{
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: bottom;
+}
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+  form {
+    background-color: black;
+  }
 }
