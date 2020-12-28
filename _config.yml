@@ -49,12 +49,12 @@ footer:
       link: mailto:josh.noble13@gmail.com
   follow:
     - name: Instagram
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
+      link: https://www.instagram.com/josh_noble4/
+      username: "@josh_noble4"
     - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: https://www.linkedin.com/in/josh-n-650238a1/
     - name: GitHub
-      link: http://github.com/YourGitHubUsername
+      link: https://github.com/jnoble157
     - name: RSS
       link: /feed.xml
 
