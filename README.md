@@ -1,2 +1,2 @@
-# TheJoshNoble.com
-TheJoshNoble.com is my personal website, built using HTML, CSS, and Javascript
+## TheJoshNoble.com
+TheJoshNoble.com is a personal blog built with Jekyll
