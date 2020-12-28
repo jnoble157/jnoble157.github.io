@@ -30,6 +30,7 @@ github_username:  jnoble157
 # Build settings
 # theme: minima
 theme: bay_jekyll_theme
+remote-theme: eliottvincent/bay
 plugins:
   - jekyll-feed
 
