@@ -77,7 +77,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .site-nav .page-link:not(:first-child) { margin-left: 20px; }
 
-@media screen and (max-width: 500px) { .site-nav { position: absolute; top: 12px; right: 24px; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; } .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 4px; text-align: center; background: #ffffff url("/assets/img/menu.png") 6px 4px no-repeat; } .site-nav .menu { clear: both; display: none; background-color: #ffffff; min-width: 10em; padding-bottom: 5px; } .site-nav .page-link { font-size: 16px; display: block; padding: 6px 16px; } }
+@media screen and (max-width: 500px) { .site-nav { position: absolute; top: 12px; right: 24px; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; } .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 4px; text-align: center; background: #ffffff url("/assets/img/menu.png") 6px 4px no-repeat; background-size: 26px 26px; } .site-nav .menu { clear: both; display: none; background-color: #ffffff; min-width: 10em; padding-bottom: 5px; } .site-nav .page-link { font-size: 16px; display: block; padding: 6px 16px; } }
 
 /** Site footer */
 .site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
