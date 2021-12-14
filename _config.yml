@@ -21,7 +21,7 @@
 title: Josh Noble
 email: josh.noble13@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my site!
+  Josh Noble Personal Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -29,8 +29,8 @@ github_username:  jnoble157
 
 # Build settings
 # theme: minima
-# theme: bay_jekyll_theme
-remote_theme: eliottvincent/bay
+theme: bay_jekyll_theme
+# remote_theme: eliottvincent/bay
 plugins:
   - jekyll-feed
 
@@ -57,7 +57,6 @@ footer:
       link: https://github.com/jnoble157
     - name: RSS
       link: /feed.xml
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
