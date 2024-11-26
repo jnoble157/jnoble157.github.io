@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>tinygrad: A simple and powerful neural network framework</title>
+  <title>onecard: for all your cards</title>
   <style>
     body {
       font-family:'Lucida Console', monospace;
@@ -23,7 +23,18 @@
       text-align: center;
     }
     svg { width: 100%; height: auto; }
-    .svg-container { width: 100%; max-width: 400px; display: inline-block; }
+    .svg-container {
+      display: flex; /* Center the image horizontally */
+      justify-content: center; /* Align the image to the center */
+      align-items: center; /* Vertically align within the container */
+      margin: 0 auto; /* Center the container itself */
+      width: 100%; /* Allow flexibility */
+    }
+    .svg-container img {
+      width: 600px;
+      height: auto;
+      object-fit: cover; /* Ensures the image fills the space proportionally */
+    }
     .separator { letter-spacing: -9px; }
     hr { border: none; height: 2px; background-color: lightgrey; width: 100%; margin: 30px auto; }
     table { border-collapse: collapse; text-align: center; width: 100%; }
@@ -37,41 +48,70 @@
     .product-photo { display: block; max-width: 640px; width: 100%; margin: 0 auto; }
     .faqtable dt { margin-bottom: 0.75em; font-style: italic; }
     .faqtable dd { margin-left: 0; margin-bottom: 2em; }
+
   </style>
 </head>
 <body>
   <div class="landing">
     <div class="svg-container">
-      <svg viewBox="0 0 130 50" xmlns="http://www.w3.org/2000/svg">
-        <!-- t -->
-        <rect x="10" y="0" width="10" height="40" fill="#000000" />
-        <rect x="0" y="10" width="30" height="10" fill="#000000" />
-        <rect x="10" y="30" width="20" height="10" fill="#000000" />
-        <!-- i -->
-        <rect x="40" y="0" width="10" height="10" fill="#000000" />
-        <rect x="40" y="20" width="10" height="20" fill="#000000" />
-        <!-- n -->
-        <rect x="60" y="10" width="10" height="30" fill="#000000" />
-        <rect x="60" y="10" width="20" height="10" fill="#000000" />
-        <rect x="80" y="20" width="10" height="20" fill="#000000" />
-        <!-- y -->
-        <rect x="100" y="10" width="10" height="20" fill="#000000" />
-        <rect x="100" y="20" width="30" height="10" fill="#000000" />
-        <rect x="120" y="10" width="10" height="30" fill="#000000" />
-        <rect x="100" y="40" width="20" height="10" fill="#000000" />
-      </svg>
+      <img src="assets/oc-light-remove-background.svg" alt="logo"/>
     </div>
     <div class="links-container">
-      <a href="index.html#tinygrad">tinygrad</a><span class="separator">|</span>
-      <a href="https://docs.tinygrad.org">docs</a><span class="separator">|</span>
-      <a href="index.html#worktiny">jobs</a><span class="separator">|</span>
-      <a href="index.html#tinybox">tinybox <span style="color:orange">(buy now!)</span></a><span class="separator">|</span>
-      <a href="index.html#faq">FAQ</a>
+      <a href="assets/onecard.pdf" target="_blank" rel="noopener noreferrer">onecard</a><span class="separator">|</span>
+      <!-- <a href="https://docs.onecard.org">docs</a><span class="separator">|</span> -->
+      <!-- <a href="index.html#work">jobs</a><span class="separator">|</span>
+      <a href="index.html#faq">faq</a><span class="separator">|</span> -->
+      <a href="index.html#waitlist">join the waitlist</a>
     </div>
   </div>
 
   <hr>
-  <h2 id="tinygrad">tinygrad</h2>
+  <section id="waitlist" style="text-align: center; margin: 50px 0;">
+    <h2>Ready to join?</h2>
+    <p>Be part of the future of payments with OneCard. Join the waitlist now!</p>
+    <form action="/submit-waitlist" method="POST" style="margin-top: 20px; display: flex; justify-content: center; gap: 10px; align-items: center;">
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required 
+        style="
+          padding: 10px;
+          font-size: 18px;
+          width: 300px;
+          max-width: 100%;
+          border: 1px solid #ccc;
+          border-radius: 10px; /* Rounded edges */
+          font-family: 'Lucida Console', monospace; /* Match site font */
+        " 
+      />
+      <button 
+        type="submit" 
+        style="
+          background-color: transparent; /* Transparent background */
+          color: #111; /* Text color */
+          padding: 10px 20px;
+          border: 2px solid #111; /* Border with same color as text */
+          border-radius: 10px; /* Rounded edges */
+          font-size: 18px;
+          cursor: pointer;
+          font-family: 'Lucida Console', monospace; /* Match site font */
+          transition: all 0.3s ease; /* Smooth transition for hover */
+        "
+        onmouseover="this.style.backgroundColor='#111'; this.style.color='white';"
+        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#111';"
+      >
+        Join the Waitlist
+      </button>
+    </form>
+  </section>
+  
+  
+  
+  
+  
+  
+  <!-- <h2 id="tinygrad">tinygrad</h2>
   <p>We write and maintain <a href="https://github.com/tinygrad/tinygrad">tinygrad</a>, the fastest growing neural
     network framework (over 23,000 GitHub stars)</p>
 
@@ -173,6 +213,6 @@
 
     <dt>What's the goal of the tiny corp?</dt>
     <dd>To accelerate. We will commoditize the petaflop and enable AI for everyone.</dd>
-  </dl>
+  </dl> -->
 </body>
 </html>
